@@ -3,68 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Colorful Website</title>
+<title>Game Selection</title>
 <style>
     body {
         font-family: Arial, sans-serif;
         background-color: #f0f0f0;
         color: #333;
-        margin: 0;
-        padding: 0;
+        text-align: center;
     }
     .container {
-        max-width: 800px;
-        margin: 20px auto;
+        max-width: 600px;
+        margin: 50px auto;
         padding: 20px;
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    .textbox {
-        margin-bottom: 20px;
+    h1 {
+        color: #007bff;
     }
-    .textbox label {
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold;
-    }
-    .textbox input[type="text"], 
-    .textbox textarea {
-        width: 100%;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-    }
-    .btn {
-        display: inline-block;
+    button {
         padding: 10px 20px;
-        background-color: #4CAF50;
+        background-color: #007bff;
         color: #fff;
-        text-decoration: none;
+        border: none;
         border-radius: 5px;
+        cursor: pointer;
         transition: background-color 0.3s;
     }
-    .btn:hover {
-        background-color: #45a049;
+    button:hover {
+        background-color: #0056b3;
     }
 </style>
 </head>
 <body>
 <div class="container">
-    <h1>Welcome to My Colorful Website!</h1>
-    <div class="textbox">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name">
-    </div>
-    <div class="textbox">
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" placeholder="Enter your email">
-    </div>
-    <div class="textbox">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Enter your message"></textarea>
-    </div>
-    <a href="#" class="btn">Submit</a>
+    <h1>Welcome to Game Selection!</h1>
+    <p>Choose a game:</p>
+    <button onclick="startGuessingGame()">Start Guessing Game</button>
 </div>
+
+<script>
+function startGuessingGame() {
+    window.location.href = "guessing_game.html"; // Navigate to the guessing game page
+}
+</script>
 </body>
 </html>
